@@ -1,7 +1,6 @@
-import { Box, Link, Text } from "@chakra-ui/react";
+import { Box, Link, Stack, Text } from "@chakra-ui/react";
 import { JSX } from "react";
-import { LuExternalLink } from "react-icons/lu";
-import { LuDownload } from "react-icons/lu";
+import { LuExternalLink, LuDownload } from "react-icons/lu";
 function Header(): JSX.Element {
     return (
         <Box
@@ -27,7 +26,7 @@ function Header(): JSX.Element {
                 Linux e admirador das exatas.
             </Text>
 
-            <Box textAlign="left" display="flex" flexDirection="column">
+            <Stack textAlign="left" gap="">
                 <Text textStyle="lg">Meus Links</Text>
                 <Link href="https://github.com/ajpf44" target="_blank">
                     Github <LuExternalLink />
@@ -35,10 +34,10 @@ function Header(): JSX.Element {
                 <Link href="https://www.linkedin.com/in/ajpf44/" target="_blank">
                     Linkedin <LuExternalLink />
                 </Link>
-                <Link href="https://www.linkedin.com/in/ajpf44/" target="_blank">
+                <Link href="src/assets/curriculo-250306.pdf" target="_blank">
                     Currículo <LuDownload />
                 </Link>
-            </Box>
+            </Stack>
         </Box>
     );
 }

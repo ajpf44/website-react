@@ -11,10 +11,11 @@ function ProjectBox(props: projectLayout): JSX.Element {
   
   return (
     <Box width="1/4" textAlign="justify">
-      <Image src={imgPath}  />
       <Text>{props.name}</Text>
+      <Image src={imgPath}  />
 			<Text>{props.description}</Text>
-			<Text>Stack: {arrayToPortuguese(props.techs)}</Text>
+			{/* <Text>Stack: {arrayToPortuguese(props.techs)}</Text> */}
+      {/*   está poluindo a página principal*/			}
     </Box>
   );
 }

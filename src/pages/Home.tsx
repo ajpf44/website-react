@@ -19,7 +19,6 @@ function Home(): JSX.Element {
 						imgPath={p.imgPath}
 						name={p.name}
 						description={p.description}
-						techs={p.techs}
 						link={p.link}
 						key={i}
 					/>

@@ -4,18 +4,19 @@ import { Provider } from "./components/ui/provider.tsx";
 import "./index.css";
 
 import Router from "./Router.tsx";
-import Header from "./components/Header.tsx";
-import { Wrap } from "@chakra-ui/react";
+import Header from "./components/Header.tsx"
+
+import { Center } from "@chakra-ui/react";
 
 const root: HTMLElement | null = document.getElementById("root");
 
 createRoot(root!).render(
 	<StrictMode>
 		<Provider>
-			<Wrap gap="3rem">
-				<Header />
+			<Header />
+			<Center width="100vw" display="flex" flexDirection="column">
 				<Router />
-			</Wrap>
+			</Center>
 		</Provider>
 	</StrictMode>
 );

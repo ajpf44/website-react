@@ -2,15 +2,15 @@ import { JSX } from "react";
 import { Image, Text, Box } from "@chakra-ui/react";
 
 import projectLayout from "@/types/projectLayout";
-import { arrayToPortuguese } from "../utils/functions";
+// import { arrayToPortuguese } from "../utils/functions";
 
-import placeholderImg from "../assets/placeholder-img.png";
+import placeholderImg from "../../assets/placeholder-img.png";
 
 function ProjectBox(props: projectLayout): JSX.Element {
   const imgPath = props.imgPath==""?placeholderImg:props.imgPath;
   
   return (
-    <Box width="1/4" textAlign="justify">
+    <Box maxW={"20rem"} textAlign="justify">
       <Text>{props.name}</Text>
       <Image src={imgPath}  />
 			<Text>{props.description}</Text>

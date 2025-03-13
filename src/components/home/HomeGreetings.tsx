@@ -1,0 +1,42 @@
+import { JSX } from "react"
+import { Flex, Text, HStack, Button, Bleed } from "@chakra-ui/react"
+import { RiArrowRightLine, RiGithubFill } from "react-icons/ri"
+
+import { useNavigate } from "react-router";
+
+function HomeGreetings(): JSX.Element {
+	const navigate = useNavigate();
+	
+	return (
+		
+		<Flex 
+			maxWidth="2xl"
+			gap="2rem"
+			minHeight="80vh" 
+			direction="column" 
+			justify="center" 
+			align="center"
+			textAlign={"center"}
+		>
+			<Text textStyle="4xl" fontWeight="semibold">Olá, meu nome é Alexandre</Text>
+			<Text textStyle="xl" >Sou um dev focado em criar soluções interessantes e funcionais. Fascinado por ciências exatas, sempre busco de novos desafios. Em constante aprendizado, como um Padawan. </Text>
+			<HStack justifyContent="center" gap ="1.4rem">
+				
+				<Button colorPalette="black" variant="solid" onClick={()=>{
+					navigate("/projects");
+				}}>
+					Sobre Mim <RiArrowRightLine />
+				</Button>
+				
+				<Button colorPalette="blue" variant="surface" onClick={()=>{
+						window.open("https://github.com/ajpf44")
+					}}
+				>
+					Github <RiGithubFill/>
+				</Button>
+			</HStack>
+		</Flex>
+	)
+}
+
+export default HomeGreetings;

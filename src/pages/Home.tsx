@@ -1,31 +1,20 @@
-import { JSX } from "react";
-import { Box, Flex, Text, Wrap } from "@chakra-ui/react";
+import { JSX } from "react"
 
-import ProjectBox from "../components/ProjectBox";
-import fotoPerfil from "../assets/foto-perfil.webp";
-import projectLayout from "@/types/projectLayout";
-
-import projectsJSON from "../data/projects.json"
-
-const projects: projectLayout[] = Object.values(projectsJSON);
+import {Center} from "@chakra-ui/react"
+import HomeGreetings from "../components/home/HomeGreetings"
+import Projects from "../components/home/Projects";
 
 function Home(): JSX.Element {
-	return (
-		<Box textAlign={"justify"} spaceY="1rem">
-			<Text textStyle="xl">Meus Projetos:</Text>
-			<Wrap gap="2rem">
-				{projects.map((p, i) => (
-					<ProjectBox
-						imgPath={p.imgPath}
-						name={p.name}
-						description={p.description}
-						link={p.link}
-						key={i}
-					/>
-				))}
-			</Wrap>
-		</Box>
-	);
+		return(
+			<>
+				<Center width="100%">
+					<HomeGreetings/>	
+				</Center>
+				<Center width="100%">
+					<Projects />
+				</Center>
+			</>
+		)
 }
 
 export default Home;

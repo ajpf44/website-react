@@ -1,20 +1,16 @@
-import { JSX } from "react"
+import { JSX } from "react";
 
-import {Center} from "@chakra-ui/react"
-import HomeGreetings from "../components/home/HomeGreetings"
+import { Center } from "@chakra-ui/react";
+import HomeGreetings from "../components/home/HomeGreetings";
 import Projects from "../components/home/Projects";
 
 function Home(): JSX.Element {
-		return(
-			<>
-				<Center width="100%">
-					<HomeGreetings/>	
-				</Center>
-				<Center width="100%">
-					<Projects />
-				</Center>
-			</>
-		)
+	return (
+		<Center width="100%" flexDirection="column">
+			<HomeGreetings />
+			<Projects />
+		</Center>
+	);
 }
 
 export default Home;

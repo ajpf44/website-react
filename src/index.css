@@ -4,7 +4,7 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
 
-  marign: 0;
+  margin: 0;
   padding: 0;
 
   color: #213547;
@@ -19,8 +19,4 @@
 body{
   margin: 0;
   padding: 0;
-}
-#root {
-  margin: auto;
-  max-width: 1280px;
 }

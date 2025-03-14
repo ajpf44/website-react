@@ -1,5 +1,5 @@
 import { JSX } from "react"
-import { Flex, Text, HStack, Button, Bleed } from "@chakra-ui/react"
+import { Flex, Text, HStack, Button } from "@chakra-ui/react"
 import { RiArrowRightLine, RiGithubFill } from "react-icons/ri"
 
 import { useNavigate } from "react-router";
@@ -11,16 +11,15 @@ function HomeGreetings(): JSX.Element {
 		
 		<Flex 
 			maxWidth="2xl"
-			gap="2rem"
-			minHeight="80vh" 
+			gap="3rem"
+			minHeight="30rem" 
 			direction="column" 
-			justify="center" 
-			align="center"
-			textAlign={"center"}
+			
+			justify="center"
 		>
 			<Text textStyle="4xl" fontWeight="semibold">Olá, meu nome é Alexandre</Text>
-			<Text textStyle="xl" >Sou um dev focado em criar soluções interessantes e funcionais. Fascinado por ciências exatas, sempre busco de novos desafios. Em constante aprendizado, como um Padawan. </Text>
-			<HStack justifyContent="center" gap ="1.4rem">
+			<Text textStyle="xl" textAlign="justify">Sou um dev focado em criar soluções interessantes e funcionais. Fascinado por ciências exatas, sempre busco de novos desafios. Em constante aprendizado, como um Padawan. </Text>
+			<HStack gap ="1.4rem">
 				
 				<Button colorPalette="black" variant="solid" onClick={()=>{
 					navigate("/projects");

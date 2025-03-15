@@ -6,13 +6,14 @@ import "./index.css";
 import Router from "./Router.tsx";
 import { Box } from "@chakra-ui/react";
 
-// import { Box } from "@chakra-ui/react";
+import Header from "./components/Header.tsx";
 
 const root: HTMLElement | null = document.getElementById("root");
 
 createRoot(root!).render(
 	<StrictMode>
 		<Provider>
+			<Header />
 			<Box maxWidth="1280px" margin="auto" p="1.2rem">
 				<Router />
 			</Box>

@@ -1,42 +1,29 @@
 import { JSX, useState } from "react";
-import {
-	Box,
-	Group,
-	Text,
-	ColorPalette,
-	Color,
-	ColorPickerSwatchGroup,
-} from "@chakra-ui/react";
-import { ColorPicker } from "@ark-ui/react";
+import { Box, Group } from "@chakra-ui/react";
 
 const tabs = [{ name: "Home" }, { name: "Projetos" }, { name: "Contato" }];
 
 function Nav(): JSX.Element {
-	const [tabFontSize, setTabFontSize] = useState("1rem");
-	const active = "Home";
+	const [activeTab, setActiveTab] = useState(tabs[0].name);
 
 	return (
 		<Group>
 			{tabs.map((tab) => {
 				return (
 					<Box
-						paddingInline={"0.3rem"}
+						marginInline={"0.3rem"}
 						cursor={"pointer"}
-						transition={"transform 0.2s ease-in-out"}
-                        borderBottom={active==tab.name?"2px solid black":""}
-                        borderBottomStyle={"inset"}
-                
-                        
-						onMouseEnter={(e) => {
-							e.target.style.transform = "scale(1.1)";
-							e.target.style.color = "black";
-						}}
-						onMouseLeave={(e) => {
-							e.target.style.transform = "scale(1.0)";
-							e.target.style.color = "inherit";
+						transition={"border 0.1s ease-in-out, scale 0.1s ease-in-out"}
+						
+						borderBottom={activeTab == tab.name ? "2px solid black" : ""}
+						borderColor={"blue.fg"}
+						
+						_hover={{
+							color: "blue.fg",
+							scale: "1.1",
 						}}
 						onClick={() => {
-							console.log("clicaste");
+							setActiveTab(tab.name);
 						}}
 					>
 						{tab.name}

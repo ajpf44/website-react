@@ -2,7 +2,8 @@ type projectLayout = {
 	imgPath: string;
 	name: string;
 	description: string;
-	link: string;
+	link?: string;
+	githubLink: string;
 	techs: string[];
 };
 

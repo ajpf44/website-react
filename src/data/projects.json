@@ -3,22 +3,24 @@
 		"name": "Influence Connect",
 		"description": "Aplicação web destinada a promover e gerenciar campanhas de influenciadores",
 		"techs": ["React", "TypeScript", "Java", "Spring Boot", "PostgreSQL"],
-		"imgPath": "",
-		"link": "https://github.com/orgs/InfluenceConnectReload/repositories"
+		"imgPath": "src/assets/influence-connect.webp",
+		"githubLink": "https://github.com/orgs/InfluenceConnectReload/repositories"
 	},
 	"Segue de Volta?":  {
 		"name": "Segue de Volta?",
 		"description": "Página Web que mostra quem não te segue de volta no github",
 		"techs": ["JavaScript", "HTML", "CSS"],
-		"imgPath": "",
+		"imgPath": "src/assets/segue-de-volta.webp",
+		"githubLink": "https://ajpf44.github.io/seguedevolta/",
 		"link": "https://ajpf44.github.io/seguedevolta/"
+		
 	},
 	"Pomodoro CLI":  {
 		"name": "Pomodoro CLI",
 		"description": "Utilitário de linha de comando(CLI) de timer pomodoro ",
 		"techs": ["Linux", "Rust"],
-		"imgPath": "",
-		"link": "https://github.com/ajpf44/pomodor-rust"
+		"imgPath": "src/assets/gif-pomo.gif",
+		"githubLink": "https://github.com/ajpf44/pomodor-rust"
 	}	
 	
 }

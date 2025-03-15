@@ -2,6 +2,7 @@ import { JSX } from "react";
 import { Box, Flex, Text } from "@chakra-ui/react";
 
 import Nav from "./Nav";
+import guide from "../style/css_guidelines";
 
 function Header(): JSX.Element {
 	return (
@@ -18,7 +19,7 @@ function Header(): JSX.Element {
 					align="center"
 					justify="space-between"
 					margin={"auto"}
-					maxW={"1000px"}
+					maxW={guide.maxWidth}
 				>
 					<Text fontSize="xl" fontWeight="bolder">
 						@ajpf44

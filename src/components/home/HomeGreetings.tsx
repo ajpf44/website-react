@@ -22,7 +22,7 @@ function HomeGreetings(): JSX.Element {
 			<HStack gap ="1.4rem">
 				
 				<Button colorPalette="black" variant="solid" onClick={()=>{
-					navigate("/projects");
+					navigate("/contato");
 				}}>
 					Sobre Mim <RiArrowRightLine />
 				</Button>

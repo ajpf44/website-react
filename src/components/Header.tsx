@@ -1,7 +1,7 @@
 import { JSX } from "react";
 import { Box, Flex, Text } from "@chakra-ui/react";
 
-import Nav from "./Tabs";
+import Nav from "./Nav";
 
 function Header(): JSX.Element {
 	return (
